@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee & Bakery | Premium Delights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <style>
+        /* Modern Typography & Smooth Scroll via CSS */
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background-color: #fcfaf8;
+            color: #333;
+        }
+
+        /* Custom Hover for Buttons and Cards using CSS (Still within B5 style) */
+        .card { 
+            border: none; 
+            transition: transform 0.3s ease; 
+        }
+        .card:hover { 
+            transform: translateY(-10px); 
+        }
+
+        /* Professional Header Height */
+        .hero-section {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+        }
+
+        /* Image Gallery Utility */
+        .gallery-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+        
+        /* Fixed Navbar Blur */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(33, 37, 41, 0.95) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="bi bi-cup-hot-fill text-warning me-2"></i>COFFEE & BAKERY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-light">
+                    <li class="nav-item"><a class="nav-link px-3 js-scroll-trigger active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 js-scroll-trigger" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 js-scroll-trigger" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 js-scroll-trigger text-warning fw-bold" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+    <section id="home" class="hero-section d-flex align-items-center text-center text-white py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-1 fw-bold mb-3">Fresh Coffee & <br>Artisan Bakery</h1>
+                    <p class="lead fs-4 mb-5 opacity-75">Savor the aroma of freshly roasted beans and the crunch of golden pastries, made with love since 1998.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a href="#menu" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold shadow">Explore Menu</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-bold">Our Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container py-5 mt-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-dark">Our Signature Menu</h2>
+            <p class="text-muted">Hand-crafted favorites to brighten your day</p>
+            <div class="mx-auto bg-warning" style="height: 4px; width: 60px; border-radius: 2px;"></div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.2WCzeMm6x097uPETMHdWRAHaLG?pid=ImgDet&w=178&h=267&c=7&dpr=1.5&o=7&rm=3" class="card-img-top" alt="Coffee" style="height:250px;">
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">Espresso Blend</h5>
+                        <p class="small text-muted mb-3">A robust and creamy double shot with nutty notes.</p>
+                        <button class="btn btn-sm btn-dark px-4 rounded-pill">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500" class="card-img-top" alt="Donuts" style="height:250px;">
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">Glazed Donuts</h5>
+                        <p class="small text-muted mb-3">Freshly fried and dipped in organic vanilla glaze.</p>
+                        <button class="btn btn-sm btn-dark px-4 rounded-pill">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500" class="card-img-top" alt="Pastries" style="height:250px;">
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">French Pastries</h5>
+                        <p class="small text-muted mb-3">Buttery layers that melt away in your mouth.</p>
+                        <button class="btn btn-sm btn-dark px-4 rounded-pill">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500" class="card-img-top" alt="Cookies" style="height: 250px;">
+                    <div class="card-body text-center p-4">
+                        <h5 class="fw-bold">Soft Cookies</h5>
+                        <p class="small text-muted mb-3">Loaded with premium Belgian chocolate chips.</p>
+                        <button class="btn btn-sm btn-dark px-4 rounded-pill">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <h2 class="display-6 fw-bold mb-4">Crafting Quality Since 1998</h2>
+                    <p class="text-muted fs-5">We are a family-owned shop dedicated to the art of brewing. Every bean is ethically sourced and every pastry is baked from scratch before sunrise.</p>
+                    <p class="text-muted">Our mission is simple: To provide a warm, welcoming space for the community while serving the highest quality artisan goods.</p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-6">
+                            <h4 class="fw-bold text-warning mb-0">100%</h4>
+                            <p class="small text-muted text-uppercase">Organic Beans</p>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="fw-bold text-warning mb-0">Daily</h4>
+                            <p class="small text-muted text-uppercase">Fresh Baking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container py-5 mt-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">From Our Kitchen</h2>
+            <p class="text-muted">A visual taste of our daily creations</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=500" class="gallery-img shadow-sm border border-white"></div>
+            <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=500" class="gallery-img shadow-sm border border-white"></div>
+            <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500" class="gallery-img shadow-sm border border-white"></div>
+            <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500" class="gallery-img shadow-sm border border-white"></div>
+            <div class="col-md-4 col-sm-6"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500" class="gallery-img shadow-sm border border-white"></div>
+            <div class="col-md-4 col-sm-6"><img src="https://tse1.explicit.bing.net/th/id/OIP.LS4TU5ZQFfzyVMnN9ZDjhAHaHa?pid=ImgDet&w=178&h=178&c=7&dpr=1.5&o=7&rm=3" class="gallery-img shadow-sm border border-white"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-lg border-0 overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-md-6 p-5 bg-dark text-white d-flex flex-column justify-content-center">
+                            <h2 class="fw-bold mb-4">Get In Touch</h2>
+                            
+                            <div class="mb-3">
+                                
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-telephone-fill text-warning me-2"></i> +1 (555) 123-4567
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-envelope-fill text-warning me-2"></i> hello@coffee&Bakery.com
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-5 bg-white">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control py-3" placeholder="Full Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control py-3" placeholder="Email Address">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control py-3" rows="4" placeholder="How can we help?"></textarea>
+                                </div>
+                                <button class="btn btn-warning w-100 py-3 fw-bold text-uppercase">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 mt-5">
+        <div class="container pb-4">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-uppercase mb-4">Coffee & Bakery</h5>
+                    <p class="text-muted small">Your premium neighborhood sanctuary for fine coffee and freshly baked delights. We pride ourselves on artisanal craftsmanship and community warmth.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 ms-auto">
+                    <h6 class="fw-bold text-uppercase mb-4">Quick Links</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none text-muted">Home</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-decoration-none text-muted">Our Menu</a></li>
+                        <li class="nav-item"><a href="#gallery" class="text-decoration-none text-muted">Gallery</a></li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none text-muted">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold text-uppercase mb-4">Opening Hours</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="d-flex justify-content-between mb-2"><span>Mon - Fri</span> <span>07:00 - 20:00</span></li>
+                        <li class="d-flex justify-content-between mb-2"><span>Sat - Sun</span> <span>08:00 - 22:00</span></li>
+                        <li class="d-flex justify-content-between text-warning"><span>Holidays</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="py-3 border-top border-secondary text-center">
+            <p class="small text-muted mb-0">&copy; 2025 Coffee & Bakery Shop. Crafted for Excellence.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
